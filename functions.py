@@ -13,6 +13,7 @@ def drawBoard(l, n):
         print "------------"
         taula(l[0:3])
         print "============"
+
 def taula(l):
     print "   |   |   "
     print " " + l[0] + " | " + l[1] + " | " + l[2] + " "
