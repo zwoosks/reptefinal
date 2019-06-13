@@ -1,3 +1,8 @@
+import random
+def chooseInitialPlayer():
+    l = ["Player", "Computer"]
+    return random.choice(l)
+
 def startBoard():
     return [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
     
