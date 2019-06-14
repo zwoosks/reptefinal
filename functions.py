@@ -73,3 +73,15 @@ def applyPlay(jug, l, lletra, n):
     nova = l
     nova[n] = lletra
     return nova
+
+def randomPlay(l):
+    espais = []
+    counter = 0
+    for element in l:
+        if element == " ":
+            espais += [counter]
+        counter += 1
+    if len(espais) == 0:
+        return -1
+    else:
+        return random.choice(espais)
