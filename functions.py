@@ -124,3 +124,7 @@ def playAgain():
             return False
         else:
             print "We are sorry. This option is not valid."
+
+def game(): NO ACABAT
+	taulell = startBoard()
+	llistaJugadors = chooseLetterPlayer()
