@@ -33,3 +33,13 @@ def isAFreeSpace(l, n):
             return True
         else:
             return False
+        
+def fullBoard(l):
+    espais = 0
+    for element in l:
+        if element == " ":
+            espais += 1
+    if espais == 0:
+        return True
+    else:
+        return False
