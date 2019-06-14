@@ -113,3 +113,14 @@ def chooseLetterPlayer():
             return res
         else:
             print "We are sorry. This letter is not valid."
+
+def playAgain():
+    estat = True
+    while estat == True:
+        lletra = raw_input("Do you want to play another game? (y / n) ")
+        if lletra == "y":
+            return True
+        elif lletra == "n":
+            return False
+        else:
+            print "We are sorry. This option is not valid."
