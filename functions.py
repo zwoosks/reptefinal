@@ -23,3 +23,13 @@ def taula(l):
     print "   |   |   "
     print " " + l[0] + " | " + l[1] + " | " + l[2] + " "
     print "   |   |   "
+
+def isAFreeSpace(l, n):
+    if l == [] or n >= 9:
+        return False
+    else:
+        casella = l[n]
+        if casella == " ":
+            return True
+        else:
+            return False
