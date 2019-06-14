@@ -100,3 +100,16 @@ def disponible(l, n):
         return True
     else:
         return False
+
+def chooseLetterPlayer():
+    estat = True
+    while estat == True:
+        lletra = raw_input("Choose between X or O: ")
+        if lletra == "X":
+            res = [lletra, "O"]
+            return res
+        elif lletra == "O":
+            res = [lletra, "X"]
+            return res
+        else:
+            print "We are sorry. This letter is not valid."
