@@ -85,3 +85,18 @@ def randomPlay(l):
         return -1
     else:
         return random.choice(espais)
+
+def play(l):
+    estat = True
+    while estat == True:
+        num = raw_input("Choose position to play (0-8): ")
+        if disponible(l, int(num)) == True:
+            return num
+        else:
+            "We are sorry. This position is not valid."
+            
+def disponible(l, n):
+    if l[n] == " ":
+        return True
+    else:
+        return False
