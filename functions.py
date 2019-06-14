@@ -38,6 +38,30 @@ def fullBoard(l):
     espais = 0
     for element in l:
         if element == " ":
+            
+def isAWonPlay(l, lletra):
+    if eq(0, 4, 8, l, lletra) == True:
+        return True
+    elif eq(2, 4, 6, l, lletra) == True:
+        return True
+    elif eq(3, 4, 5, l, lletra) == True:
+        return True
+    elif eq(1, 4, 7, l, lletra) == True:
+        return True
+    elif eq(0, 3, 6, l, lletra) == True:
+        return True
+    elif eq(2, 5, 8, l, lletra) == True:
+        return True
+    else:
+        return False
+    
+def eq(n1, n2, n3, l, lletra):
+    if l[n1] == l[n2]:
+        if l[n1] == l[n3]:
+            if l[n1] == lletra:
+                return True
+    else:
+        return False
             espais += 1
     if espais == 0:
         return True
