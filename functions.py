@@ -43,3 +43,9 @@ def fullBoard(l):
         return True
     else:
         return False
+
+def applyPlay(jug, l, lletra, n):
+    print jug + " occupies position " + str(n)
+    nova = l
+    nova[n] = lletra
+    return nova
